@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yuting PENG - Academic Portfolio</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#2563eb',
+secondary: '#1d4ed8'
+},
+borderRadius: {
+'none': '0px',
+'sm': '2px',
+DEFAULT: '4px',
+'md': '8px',
+'lg': '12px',
+'xl': '16px',
+'2xl': '20px',
+'3xl': '24px',
+'full': '9999px',
+'button': '4px'
+}
+}
+}
+}
+</script>
+<style>
+body {
+font-family: 'Inter', sans-serif;
+min-height: 1024px;
+}
+.nav-link {
+position: relative;
+}
+.nav-link::after {
+content: '';
+position: absolute;
+width: 0;
+height: 2px;
+bottom: -4px;
+left: 0;
+background-color: #2563eb;
+transition: width 0.3s;
+}
+.nav-link:hover::after {
+width: 100%;
+}
+.active::after {
+width: 100%;
+}
+</style>
+</head>
+<body class="bg-white">
+<nav class="fixed top-0 w-full bg-gradient-to-r from-primary/5 to-secondary/5 backdrop-blur-sm shadow-sm z-50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-16">
+<div class="flex items-center">
+<span class="text-xl font-semibold text-gray-900">Yuting PENG</span>
+</div>
+<div class="flex items-center space-x-8">
+<a href="#home" class="nav-link active text-gray-900 hover:text-primary">Home</a>
+<a href="#projects" class="nav-link text-gray-900 hover:text-primary">Projects</a>
+<a href="#publications" class="nav-link text-gray-900 hover:text-primary">Publications</a>
+<a href="#contact" class="nav-link text-gray-900 hover:text-primary">Contact</a>
+</div>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+    <section id="home" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24" style="background-color: #fff;">
+<div class="grid grid-cols-3 gap-12">
+<div class="col-span-1">
+<img src="personal.jpg"
+alt="Yuting PENG"
+class="w-full rounded-lg shadow-lg object-cover">
+</div>
+<div class="col-span-2">
+<h1 class="text-4xl font-bold text-gray-900 mb-4">Hi, I'm Yuting PENG（彭雨亭）</h1>
+<h3 class="text-lg text-gray-600 mb-6">The Chinese University of Hong Kong (CUHK)</h3>
+<p class="text-gray-700 mb-3">I am currently a master's student at CUHK, advised by Dr. Frances Lu YANG, and also collaborate closely with my undergraduate mentors Prof. Kang Li and Prof. Rong Yin at the Pittsburgh Institute of SCU and West China Hospital. </p>
+<p class="text-gray-700 mb-3">My ongoing projects include exploring how narrative therapy and digital memory interventions (personalized digital memory websites) can enhance mental health among older adults, and investigating user acceptance of EHR patient portals in China, with a particular focus on how large language models might enhance usability.</p>
+<p class="text-gray-700 mb-3">I'm highly open to collaborations, so please feel free to reach out if our interests align! In my personal time, I enjoy playing guitar, reading, and various sports activities.</p>
+
+<div class="mb-8">
+<h3 class="text-xl font-semibold text-gray-900 mb-4">Research Interests</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center space-x-3">
+<i class="fas fa-users text-primary w-6 h-6 flex items-center justify-center"></i>
+<span class="text-gray-700">User Experience & Engagement</span>
+</div>
+<div class="flex items-center space-x-3">
+<i class="fas fa-heartbeat text-primary w-6 h-6 flex items-center justify-center"></i>
+<span class="text-gray-700">Health Communication & Informatics</span>
+</div>
+<div class="flex items-center space-x-3">
+<i class="fas fa-robot text-primary w-6 h-6 flex items-center justify-center"></i>
+<span class="text-gray-700">AI & Human Interaction</span>
+</div>
+<div class="flex items-center space-x-3">
+<i class="fas fa-chart-bar text-primary w-6 h-6 flex items-center justify-center"></i>
+<span class="text-gray-700">Experimental & Quantitative Methods</span>
+</div>
+<div class="flex items-center space-x-3">
+<i class="fas fa-chart-line text-primary w-6 h-6 flex items-center justify-center"></i>
+<span class="text-gray-700">Aging Studies</span>
+</div>
+</div>
+</div>
+<a href="YutingPENG_CV.pdf" download class="inline-flex items-center px-6 py-3 bg-primary text-white !rounded-button hover:bg-blue-700 transition-colors">
+    <i class="fas fa-download mr-2"></i>
+    Download CV
+  </a>  
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8 mt-16">
+<div>
+<h2 class="text-2xl font-semibold text-gray-900 mb-8">Education</h2>
+<div class="bg-gray-50 p-8 rounded-lg">
+<div class="space-y-6">
+<div>
+<h3 class="font-semibold text-lg mb-2">Master of Arts in Global Communication</h3>
+<p class="text-gray-600">The Chinese University of Hong Kong</p>
+<p class="text-gray-500">09/2024 – present</p>
+</div>
+<div class="border-t border-gray-200 pt-6">
+<h3 class="font-semibold text-lg mb-2">Bachelor of Arts in Network and New Media</h3>
+<p class="text-gray-600">Sichuan University</p>
+<p class="text-gray-500">09/2020 – 06/2024</p>
+<p class="text-gray-600">GPA: 3.79/4.0</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-2xl font-semibold text-gray-900 mb-8">Professional & Research Experience</h2>
+<div class="bg-gray-50 p-8 rounded-lg">
+<div class="space-y-6">
+<div>
+<h3 class="font-semibold text-lg mb-2">Research Assistant</h3>
+<p class="text-gray-600">School of Journalism and Communication, CUHK</p>
+<p class="text-gray-500">12/2024 – Present</p>
+</div>
+<div class="border-t border-gray-200 pt-6">
+<h3 class="font-semibold text-lg mb-2">Research Assistant</h3>
+<p class="text-gray-600">Pittsburgh Institute of SCU & West China Hospital</p>
+<p class="text-gray-500">04/2024 – Present</p>
+</div>
+<div class="border-t border-gray-200 pt-6">
+<h3 class="font-semibold text-lg mb-2">Intern Advertising and Product Manager</h3>
+<p class="text-gray-600">Meituan</p>
+<p class="text-gray-500">06/2023 – 01/2024</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</section>
+<section id="projects" class="py-24" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://ai-public.mastergo.com/ai/img_res/a12cd547cb84f7afae1f7bcf7f83895b.jpg') no-repeat center/cover;">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-16">
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Research Journey</h2>
+<div class="relative">
+<div class="h-1 bg-gray-200 absolute top-6 left-0 right-0"></div>
+<div class="relative flex justify-between">
+<div class="text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
+<i class="fas fa-desktop text-white"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Initial Focus</h3>
+<p class="text-sm text-gray-600 max-w-xs">Media engagement and user interaction studies in digital environments</p>
+</div>
+<div class="text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
+<i class="fas fa-robot text-white"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Transition Phase</h3>
+<p class="text-sm text-gray-600 max-w-xs">Integration of AI technologies in healthcare communication</p>
+</div>
+<div class="text-center">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
+<i class="fas fa-brain text-white"></i>
+</div>
+<h3 class="text-lg font-semibold mb-2">Current Direction</h3>
+<p class="text-sm text-gray-600 max-w-xs">Interdisciplinary research combining HCI, LLM, and healthcare systems</p>
+</div>
+</div>
+</div>
+</div>
+<h2 class="text-3xl font-bold text-gray-900 mb-12">Ongoing Projects</h2>
+<div class="space-y-8">
+<div class="mb-12">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-semibold text-gray-900 mb-2">Technology Acceptance and Usability of Electronic Health Records (EHR) in China</h3>
+<p class="text-gray-500">04/2024 – Present</p>
+</div>
+<a href="#" onclick="showProjectDetail('projectDetail1')" class="inline-flex items-center px-4 py-2 bg-primary text-white !rounded-button hover:bg-blue-700 transition-colors">
+<i class="fas fa-external-link-alt mr-2"></i>
+View Details
+</a>
+</div>
+<div class="space-y-4">
+    <!-- 替换为图片 -->
+    <img src="EHR.png" alt="EHR Project" class="w-full h-auto" style="max-width:400px; height:300px; object-fit:cover;">
+  </div>
+</div>
+<div class="mb-12">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-semibold text-gray-900 mb-2">Remember Me: Digital Memory Service for Older People in Hong Kong</h3>
+<p class="text-gray-500">12/2024 – Present</p>
+</div>
+<a href="#" onclick="showProjectDetail('projectDetail2')"  class="inline-flex items-center px-4 py-2 bg-primary text-white !rounded-button hover:bg-blue-700 transition-colors">
+<i class="fas fa-external-link-alt mr-2"></i>
+View Details
+</a>
+</div>
+</div>
+<div class="space-y-4">
+  <!-- 替换为图片 -->
+  <img src="Aging.jpg" alt="Aging Project" class="w-full h-auto" style="max-width:400px; height:300px; object-fit:cover;">
+</div>
+</div>
+</div>
+</section>
+<section class="bg-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-12">Previous Projects</h2>
+<div class="grid grid-cols-3 gap-8">
+<div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+<h3 class="text-2xl font-semibold text-gray-900 mb-2">Intelligent Allocation of Medical Resources in Internet Hospitals</h3>
+<p class="text-gray-500 mb-4">09/2023 – 01/2024</p>
+<div class="space-y-4">
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Overview</h4>
+<p class="text-gray-700">This study demonstrates that employing a Deep Q-Network (DQN) model for medical resource allocation in internet hospitals significantly enhances operational efficiency, reducing patient waiting times by up to 78.6% and maintaining near-full hospital capacity utilization.</p>
+</div>
+<div class="mt-4">
+<a href="#" onclick="showProjectDetail('projectDetail3')"  class="inline-flex items-center px-4 py-2 bg-primary text-white !rounded-button hover:bg-blue-700 transition-colors">
+<i class="fas fa-external-link-alt mr-2"></i>
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+<h3 class="text-2xl font-semibold text-gray-900 mb-2">Optimizing Pop-Up Advertisements with Eye-Tracking</h3>
+<p class="text-gray-500 mb-4">01/2024 – 06/2024</p>
+<div class="space-y-4">
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Overview</h4>
+<p class="text-gray-700">This study investigates how video pace, ad relevance, and color impact viewer engagement with pop-up advertisements, finding that high relevance and bright colors in slower-paced videos significantly enhance viewer attention and overall impressions.</p>
+</div>
+<div class="mt-4">
+<a href="#" onclick="showProjectDetail('projectDetail4')"  class="inline-flex items-center px-4 py-2 bg-primary text-white !rounded-button hover:bg-blue-700 transition-colors">
+<i class="fas fa-external-link-alt mr-2"></i>
+View Details
+</a>
+</div>
+</div>
+</div>
+<div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+<h3 class="text-2xl font-semibold text-gray-900 mb-2">Augmented Reality Filters and Viewer Interaction</h3>
+<p class="text-gray-500 mb-4">06/2023 – 09/2023</p>
+<div class="space-y-4">
+<div>
+<h4 class="font-semibold text-gray-900 mb-2">Overview</h4>
+<p class="text-gray-700">This research explores how the virtuality and exaggeration of AR filters influence viewer interaction on TikTok, demonstrating that moderate levels of virtuality and higher exaggeration optimize viewer engagement, while excessive combinations diminish interaction.</p>
+</div>
+<div class="mt-4">
+<a href="#" onclick="showProjectDetail('projectDetail5')"  class="inline-flex items-center px-4 py-2 bg-primary text-white !rounded-button hover:bg-blue-700 transition-colors">
+<i class="fas fa-external-link-alt mr-2"></i>
+View Details
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="publications" class="py-24" style="background: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('https://ai-public.mastergo.com/ai/img_res/9c9fedad06191af6e9f23dd1d08c3e75.jpg') no-repeat center/cover;">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-gray-900 mb-12">Publications & Working Papers</h2>
+<div class="space-y-8">
+<h3 class="text-2xl font-semibold text-gray-900 mb-6">Papers under peer review</h3>
+<div class="bg-white p-8 rounded-lg shadow-sm space-y-6">
+<div class="border-l-4 border-gray-300 pl-6">
+<h4 class="text-xl font-medium text-gray-900 mb-2">Understanding User Adoption of Electronic Health Records Patient Portals and Insights from the UTAUT3 Model: A Survey study</h4>
+<p class="text-gray-600 mb-2">Under Review at Journal of the American Medical Informatics Association</p>
+<p class="text-gray-700">Peng, Y., Yin, R.</p>
+</div>
+<div class="border-l-4 border-gray-300 pl-6">
+<h4 class="text-xl font-medium text-gray-900 mb-2">Optimizing Medical Resource Allocation and Patient Admission Management Using Deep Q-Networks During the Pandemic</h4>
+<p class="text-gray-600 mb-2">Under Review at Operations Management in Healthcare Systems</p>
+<p class="text-gray-700">Qin, H., Peng, Y., & Fang, Y.</p>
+</div>
+<div class="border-l-4 border-gray-300 pl-6">
+<h4 class="text-xl font-medium text-gray-900 mb-2">Optimizing Pop-Up Advertisements to Enhance Viewer Attention and Impressions: A Comprehensive Eye-Tracking Study Reveals Effective Strategies for Ad Design on Long Video Platforms</h4>
+<p class="text-gray-600 mb-2">Under Review at Journal of Advertising Research</p>
+<p class="text-gray-700">Peng, Y.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<h2 class="text-3xl font-bold text-gray-900 mb-8">Contact Me</h2>
+<p class="text-gray-700 mb-8">Welcoming collaborations and discussions related to human-computer interaction, health informatics, and media analytics.</p>
+<div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+<div class="flex items-center justify-center space-x-2 text-lg text-gray-700">
+<i class="fas fa-envelope text-primary"></i>
+<a href="mailto:yutingpeng@link.cuhk.edu.hk" class="hover:text-primary transition-colors">yutingpeng@link.cuhk.edu.hk</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-50 py-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center text-gray-500">
+<p>&copy; 2024 Yuting PENG. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<div id="projectDetail1" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg w-[80%] max-w-4xl max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+        <h2 class="text-2xl font-bold text-gray-900">Project Details: EHR in China</h2>
+        <button onclick="hideProjectDetail('projectDetail1')" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-xl"></i>
+</button>
+</div>
+<div class="p-6">
+<div class="prose max-w-none">
+<p class="text-gray-700 leading-relaxed mb-6">
+Electronic Health Records (EHR) patient portals have the potential to significantly improve healthcare by enabling patients to access their medical information, communicate effectively with healthcare providers, and actively participate in their health management. However, the adoption of EHR systems in China remains limited, presenting a critical gap that affects patient care and healthcare efficiency.
+<p class="text-gray-700 leading-relaxed mb-6">
+Motivated by personal observations during hospital visits in Chengdu, I noticed significant usability issues with existing EHR interfaces, particularly impacting elderly patients who struggled with complex navigation and inadequate support. Recognizing the broader implications of these barriers, I embarked on a structured investigation into the acceptance and usability of EHR systems from the perspective of healthcare consumers in China.
+</p>
+<p class="text-gray-700 leading-relaxed mb-6">
+Key concepts such as usability, technology acceptance, and patient engagement guided my approach. Specifically, I employed the Unified Theory of Acceptance and Use of Technology 3 (UTAUT3), a comprehensive theoretical model designed to evaluate technology adoption by examining user expectations, ease of use, social influence, facilitating conditions, habits, personal innovativeness, and health consciousness.
+</p>
+<p class="text-gray-700 leading-relaxed mb-6">
+The research methods involved participatory observations, focus group discussions, and a comprehensive nationwide survey. Initially, focus groups informed the identification of critical barriers including user navigation challenges, trust issues, and data privacy concerns. Subsequently, a carefully structured survey based on UTAUT3 principles gathered responses from over 1,300 participants across China, providing robust data on key factors influencing user acceptance.
+</p>
+<p class="text-gray-700 leading-relaxed mb-6">
+    The findings from this systematic approach highlighted several critical themes influencing EHR adoption:
+</p>   
+<p class="text-gray-700 leading-relaxed mb-6">
+
+    1.Performance Expectancy: Users are significantly more likely to adopt systems perceived to offer clear health benefits.
+    
+    2.Effort Expectancy: Systems must be intuitive and easy to navigate to enhance adoption.
+    
+    3.Social Influence: Recommendations and experiences shared by peers significantly impact user intentions.
+    
+    4.Facilitating Conditions: Availability of adequate resources and support substantially affects user adoption.
+    
+    5.Habit and Health Consciousness: Users' regular technology use patterns and awareness of personal health management strongly influence their engagement with EHR systems.
+</p>
+<p class="text-gray-700 leading-relaxed">
+Guided by these insights, my team and I collaborated with engineering students to develop an innovative EHR portal tailored specifically for Chinese users. A notable enhancement included integrating an AI-powered assistant designed to guide users effortlessly through various features, significantly improving accessibility and user satisfaction.
+</p>
+<p class="text-gray-700 leading-relaxed">
+To rigorously evaluate the enhanced system, we conducted controlled experiments utilizing eye-tracking and EEG technologies, enabling us to objectively assess cognitive and emotional responses and iteratively refine the platform based on these insights.
+</p>
+<p class="text-gray-700 leading-relaxed">
+This project makes significant practical contributions by highlighting specific user-driven improvements necessary for successful EHR implementation in China. It also provides clear guidance for future developments, emphasizing the need for ongoing research to refine user interfaces and ensure that patient-centered technologies align with the unique social and cultural dynamics of Chinese healthcare consumers.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="projectDetail2" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg w-[80%] max-w-4xl max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+        <h2 class="text-2xl font-bold text-gray-900">Project Details: Digital Memory Services and Narrative Therapy</h2>
+        <button onclick="hideProjectDetail('projectDetail2')" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-xl"></i>
+</button>
+</div>
+<div class="p-6">
+<div class="prose max-w-none">
+<p class="text-gray-700 leading-relaxed mb-6">
+    As societies age, mental health challenges among older adults, such as depression, social isolation, and declining self-identity, have become increasingly prevalent. In Hong Kong, these issues are particularly critical due to a rapidly aging population. Responding to this pressing need, our research at the Chinese University of Hong Kong explores an innovative intervention combining narrative therapy and personalized digital memory services to enhance psychological well-being among older individuals.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Narrative therapy is a therapeutic approach that empowers individuals by enabling them to reconstruct meaningful personal narratives. Complementing this, digital storytelling utilizes multimedia elements—text, images, audio, and video—to help older adults actively engage with and preserve their life stories digitally. By integrating these two approaches, our intervention addresses depression and social isolation by strengthening older adults' sense of identity and social connectedness.
+<p class="text-gray-700 leading-relaxed mb-6">
+    The methodological framework employed a repeated-measures experimental design involving 30 to 50 older adults experiencing mild to moderate depressive symptoms. Participants engaged in structured narrative therapy sessions, which encouraged reflective personal storytelling. Subsequently, these narratives were transformed into personalized digital memory profiles in the form of interactive websites. The intervention concluded with participants sharing these digital narratives with their social networks, fostering deeper interpersonal connections and promoting emotional support.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="projectDetail3" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg w-[80%] max-w-4xl max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+        <h2 class="text-2xl font-bold text-gray-900">Project Details: Intelligent Allocation of Medical Resources </h2>
+        <button onclick="hideProjectDetail('projectDetail3')" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-xl"></i>
+</button>
+</div>
+<div class="p-6">
+<div class="prose max-w-none">
+<p class="text-gray-700 leading-relaxed mb-6">
+    The COVID-19 pandemic has profoundly tested the resilience of healthcare systems globally, creating significant shortages in critical medical resources such as hospital beds, ventilators, and healthcare personnel. These shortages have compelled hospitals to prioritize COVID-19 patients, often leading to delays and inadequate care for other urgent and chronic conditions. Recognizing these severe challenges, I collaborated with West China Hospital to explore advanced solutions aimed at optimizing resource allocation and patient admission processes during pandemic crises using Reinforcement Learning (RL) and Deep Q-Networks (DQN).
+<p class="text-gray-700 leading-relaxed mb-6">
+    Reinforcement Learning (RL) is a powerful machine learning technique that trains models to make optimal decisions through interaction with their environment, learning from outcomes to improve future decision-making. Deep Q-Networks (DQN), an advanced form of RL, combine traditional reinforcement learning with deep neural networks to effectively manage complex and dynamic situations, such as allocating limited healthcare resources.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Our research utilized West China Hospital, a prominent medical center, as the setting for this study. Faced with resource limitations and rapidly changing conditions during the COVID-19 Omicron variant surge, the hospital urgently needed a dynamic and efficient admission and resource allocation protocol. We developed a model based on DQN, which aimed to dynamically allocate inpatient beds among different patient categories: outpatients, emergency patients, and COVID-19 pneumonia patients.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Through detailed numerical simulations and sensitivity analyses, we evaluated the effectiveness of the DQN-based model in real-world scenarios. The model optimally balanced patient admission priorities, significantly reducing waiting times and efficiently utilizing hospital beds. The following key findings emerged from our study:
+<p class="text-gray-700 leading-relaxed mb-6">
+    1.The DQN model consistently prioritized admissions for critically urgent patients, ensuring timely care for emergency and pneumonia patients even amid resource shortages.
+</p>   
+<p class="text-gray-700 leading-relaxed mb-6">
+    2.The simulation results indicated high consistency in resource allocation, with minimal delays for urgent patient groups despite fluctuations in resource availability due to healthcare worker infections.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Sensitivity analyses demonstrated the robustness of the DQN approach across varying scenarios, including fluctuating patient arrival rates and resource availability impacted by healthcare worker infections.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Our findings underscore the significant practical benefits of applying advanced reinforcement learning algorithms in healthcare management, particularly in emergency scenarios. Compared to traditional resource management practices, our model effectively balances patient urgency and resource availability, improving both operational efficiency and patient outcomes.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Looking ahead, future research should focus on refining the algorithm to handle larger-scale scenarios efficiently, improving computational speed, and incorporating additional real-world complexities such as multi-agency cooperation and detailed patient care requirements. Ultimately, this research contributes to the ongoing development of resilient and responsive healthcare systems, better prepared to face future public health emergencies.
+</p> 
+</div>
+</div>
+</div>
+</div>
+<div id="projectDetail4" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg w-[80%] max-w-4xl max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+        <h2 class="text-2xl font-bold text-gray-900">Project Details: Pop-Up Advertisements</h2>
+        <button onclick="hideProjectDetail('projectDetail4')" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-xl"></i>
+</button>
+</div>
+<div class="p-6">
+<div class="prose max-w-none">
+<p class="text-gray-700 leading-relaxed mb-6">
+    In today's rapidly evolving digital environment, online video platforms have become crucial for advertising, yet many pop-up ads are perceived negatively due to their intrusive nature. This raises critical questions for advertisers: How can pop-up ads be designed effectively to attract viewers' attention without disrupting their viewing experience? Recognizing this challenge, my research aims to understand how video pace, ad relevance, and color influence viewer attention and overall impressions of pop-up advertisements on video platforms.
+</p>
+<p class="text-gray-700 leading-relaxed mb-6">
+    Theoretically, this study builds upon the Limited Capacity Model, which suggests that consumers have limited cognitive resources and can become overloaded when presented with excessive information simultaneously. Additionally, Cognitive Load Theory further classifies these demands into intrinsic (task complexity), extraneous (presentation style), and germane (content relevance), providing a structured lens to assess how different ad features interact with viewer attention and perception.
+<p class="text-gray-700 leading-relaxed mb-6">
+    A carefully controlled experimental approach was employed, integrating eye-tracking technology to objectively measure viewer attention and fixation durations alongside questionnaires capturing subjective impressions. Participants viewed videos manipulated for pace (fast or slow) accompanied by pop-up ads varying in relevance (high or low) and color vividness (bright or dull). These variables were systematically combined to form different viewing conditions, with each participant exposed to all conditions in randomized order to ensure experimental rigor and minimize biases.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Results from the eye-tracking data indicated a significant interaction between video pace and ad relevance. Specifically, high-relevance pop-up ads attracted more sustained attention when embedded in slower-paced videos, as viewers had more cognitive resources available to process the congruent ad content deeply. Interestingly, under faster video pace conditions, the relevance of ads did not significantly impact viewer attention, suggesting that the increased cognitive load associated with faster-paced videos reduces viewers' ability to engage deeply with the ads, regardless of their relevance.
+</p>   
+<p class="text-gray-700 leading-relaxed mb-6">
+    Further analysis revealed a nuanced role for ad color. Bright colors significantly enhanced viewer attention when ads were highly relevant and appeared in slower-paced videos. Conversely, brightly colored ads with low relevance in the same context led to reduced attention, possibly because they exacerbated cognitive conflicts or irritation. These findings indicate that visual salience through color must be strategically matched with ad relevance to optimize viewer attention.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Regarding viewer impressions, ad relevance emerged as the most critical factor, significantly influencing subjective impressions irrespective of video pace. Ads that were closely related to video content consistently elicited more positive viewer responses, underscoring the importance of contextual congruence. Notably, bright colors negatively impacted impressions when ads were of low relevance, likely due to perceived intrusiveness or disruption.
+<p class="text-gray-700 leading-relaxed mb-6">
+    The practical implications of this research are substantial, offering clear strategies for advertisers. To effectively capture viewer attention and leave positive impressions, advertisers should embed brightly colored, contextually relevant pop-up ads within slower-paced video segments. Conversely, in contexts where relevance is low, dull-colored ads are preferable to minimize cognitive disruption and improve overall viewer perception.
+<p class="text-gray-700 leading-relaxed mb-6">
+    This study contributes significantly to both theory and practice by clarifying how cognitive load and visual design features jointly influence advertising effectiveness. Future research directions include exploring deeper cognitive mechanisms behind viewer engagement and extending the investigation into how ad effectiveness translates into actual consumer behaviors such as clicks and purchases.
+</p> 
+</div>
+</div>
+</div>
+</div>
+<div id="projectDetail5" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-lg w-[80%] max-w-4xl max-h-[90vh] overflow-y-auto">
+      <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-4 flex justify-between items-center">
+        <h2 class="text-2xl font-bold text-gray-900">Project Details: AR Filters</h2>
+        <button onclick="hideProjectDetail('projectDetail5')" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times text-xl"></i>
+</button>
+</div>
+<div class="p-6">
+<div class="prose max-w-none">
+<p class="text-gray-700 leading-relaxed mb-6">
+    With the explosive growth of short-form video platforms like TikTok, augmented reality (AR) filters have become a crucial feature to capture user attention and foster interaction. However, despite their popularity, there remains limited scholarly understanding of how specific characteristics of AR filters—namely virtuality and exaggeration—impact viewer interaction. Addressing this gap is essential for social media marketers and developers aiming to enhance user engagement and improve content effectiveness on these platforms.
+<p class="text-gray-700 leading-relaxed mb-6">
+    In this study, we define key concepts clearly and accessibly: virtuality refers to the extent to which digital enhancements convincingly blend with reality, creating immersive experiences, while exaggeration refers to visual alterations that dramatically emphasize or diminish certain features, increasing entertainment value and curiosity. These elements are central to understanding the AR experience on TikTok, where visual appeal directly influences viewer interaction.
+<p class="text-gray-700 leading-relaxed mb-6">
+    To investigate these effects, we systematically analyzed viewer interactions with 823 popular TikTok videos employing official AR filters. Each filter's level of virtuality and exaggeration was quantitatively assessed through viewer surveys, creating a robust foundation for empirical analysis. Interaction was measured using publicly available data, such as the number of likes and favorites.
+<p class="text-gray-700 leading-relaxed mb-6">
+    The findings were clearly structured and revealed several important insights:
+<p class="text-gray-700 leading-relaxed mb-6">
+    Both virtuality and exaggeration independently demonstrated a strong positive correlation with viewer interaction. Higher virtuality significantly increased viewer engagement, suggesting that more immersive and realistic AR experiences foster deeper viewer engagement.
+</p>   
+<p class="text-gray-700 leading-relaxed mb-6">
+    Similarly, filters with a higher degree of exaggeration were more effective at attracting viewer attention, confirming the critical role of playful and visually striking content.
+<p class="text-gray-700 leading-relaxed mb-6">
+    However, the interaction between virtuality and exaggeration presented a more nuanced scenario. Our analysis revealed an inverse relationship when both virtuality and exaggeration were high, suggesting a saturation effect. Excessive simultaneous increases in both dimensions might overwhelm viewers, thus reducing overall interaction.
+<p class="text-gray-700 leading-relaxed mb-6">
+    This study makes important theoretical contributions by clarifying the complex relationship between AR filter characteristics and viewer behavior. While past research provided inconsistent views regarding AR virtuality, our findings clearly indicate that moderate, rather than extreme, virtuality optimally enhances viewer interaction. Moreover, the identification of a significant, albeit negative, interaction between virtuality and exaggeration adds depth to existing theories, highlighting the need for balanced design approaches in AR filter creation.
+<p class="text-gray-700 leading-relaxed mb-6">
+    Practically, this research provides actionable insights for social media platforms and marketers. To optimize viewer interaction, creators should carefully balance virtuality and exaggeration. Specifically, moderate virtuality combined with high exaggeration appears ideal for maximizing viewer engagement, avoiding excessive cognitive overload. This recommendation provides direct strategic value for developers seeking to refine AR filters to achieve maximum user impact and interaction.
+</p> 
+<p class="text-gray-700 leading-relaxed mb-6">
+    Future research should extend this analysis beyond TikTok to other platforms, explore underlying cognitive mechanisms through additional physiological measurements, and investigate the long-term implications of AR filter usage on viewer behavior and well-being. This broader understanding will not only contribute academically but also guide practical improvements in AR filter design, ultimately enhancing viewer experiences and engagement on social media platforms.
+</p>
+</div>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    function setActiveLink() {
+    const sections = document.querySelectorAll('section');
+    let currentSection = '';
+    sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.clientHeight;
+    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+    currentSection = section.getAttribute('id');
+    }
+    });
+    navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').substring(1) === currentSection) {
+    link.classList.add('active');
+    }
+    });
+    }
+    window.addEventListener('scroll', setActiveLink);
+    setActiveLink();
+    navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    window.scrollTo({
+    top: targetSection.offsetTop - 64,
+    behavior: 'smooth'
+    });
+    });
+    });
+    });
+    
+    let scrollPosition = 0;
+
+function showProjectDetail(modalId) {
+  // 记录当前滚动位置
+  scrollPosition = window.scrollY;
+
+  // 计算滚动条宽度
+  const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+
+  // 给 body 预留滚动条宽度，避免左右跳动
+  document.body.style.marginRight = scrollBarWidth > 0 ? `${scrollBarWidth}px` : '';
+
+  // 固定 body 在当前视图位置
+  document.body.style.position = 'fixed';
+  document.body.style.top = `-${scrollPosition}px`;
+  document.body.style.left = '0';
+  document.body.style.width = '100%'; // 避免宽度塌缩
+
+  // 显示对应的弹窗
+  document.getElementById(modalId).classList.remove('hidden');
+}
+
+function hideProjectDetail(modalId) {
+  // 隐藏弹窗
+  document.getElementById(modalId).classList.add('hidden');
+
+  // 恢复 body 样式
+  document.body.style.marginRight = '';
+  document.body.style.position = '';
+  document.body.style.top = '';
+  document.body.style.left = '';
+  document.body.style.width = '';
+
+  // 恢复之前的滚动位置
+  window.scrollTo(0, scrollPosition);
+}
+
+
+
+    </script>
+    </body>
+    </html>
+    
